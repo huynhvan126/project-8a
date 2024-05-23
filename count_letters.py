@@ -7,9 +7,9 @@ def count_letters(string):
     letter_counts = {}
     for char in string:
         if char.isupper() or char.islower():
-            char = char.upper()
-            if char in letter_counts:
-                letter_counts[char] += 1
+            upper_char = char.upper()
+            if upper_char in letter_counts:
+                letter_counts[upper_char] += 1
         else:
-            letter_counts[char] = 1
+            letter_counts[upper_char] = 1
     return letter_counts
